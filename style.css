@@ -1,0 +1,55 @@
+body
+{
+background-color: brown;
+}
+
+header
+{
+display: flex;
+flex-direction:row;    
+width: 100%;
+height: 300px;
+}
+
+
+body>header>.titres
+{
+    width: 50%;
+    height: 300px;
+    background-color: aqua;
+}
+
+body>header>nav
+{
+    width: 50%;
+    height: 300px;
+    background-color: burlywood;
+}
+
+body>.filter
+{
+    width: 100%;
+    height: 200px;
+    background-color: chartreuse;
+}
+
+body>.hebergement
+{
+    width: 100%;
+    height: 500px;
+    background-color: gray;
+}
+
+body>.activite
+{
+    width: 100%;
+    height: 400px;
+    background-color: beige;
+}
+
+body>footer
+{
+    width: 100%;
+    height: 200px;
+    background-color:black;
+}
