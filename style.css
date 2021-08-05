@@ -21,6 +21,9 @@ body>header>.titres
 
 body>header>nav
 {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
     width: 50%;
     height: 300px;
     background-color: burlywood;
@@ -28,13 +31,26 @@ body>header>nav
 
 body>.filter
 {
+    display: flex;
+    flex-direction: row;
     width: 100%;
     height: 200px;
     background-color: chartreuse;
 }
+body>.filter *
+{
+    margin: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+    height: 30px;
+
+}
 
 body>.hebergement
 {
+    display: flex;
+    flex-direction: row;
     width: 100%;
     height: 500px;
     background-color: gray;
@@ -45,6 +61,7 @@ body>.activite
     width: 100%;
     height: 400px;
     background-color: beige;
+    
 }
 
 body>footer
@@ -52,4 +69,85 @@ body>footer
     width: 100%;
     height: 200px;
     background-color:black;
+}
+body>.hebergement>div.Nliste 
+{
+    margin: 30px;
+    background-color: crimson;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+body>.hebergement>div.Nliste *
+{
+    display: flex;
+    flex-direction: row;
+    background: cornsilk;
+    width: 170px;
+    height: 170px;
+    margin:10px;
+    margin-left: 40px;
+}
+body>.hebergement>div.Pliste 
+{
+    margin: 30Px;
+    background-color: crimson;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+body>.hebergement>div.Pliste *
+{
+    display: flex;
+    flex-direction: row;
+    background: cornsilk;
+    width: 120px;
+    height: 120px;
+    margin:20px;
+}
+
+body>.activite
+{
+    
+    background-color: rgb(130, 57, 145);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+body>.activite>div 
+{
+    background-color: rgb(16, 133, 45);
+    display: flex;
+    flex-wrap: wrap;
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+}
+footer
+{
+    display: inline-block;
+    text-align: center;
+}
+.Bloc1
+{
+    color: white;
+    display: inline-block;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.Bloc2
+{
+    color: white;
+    display: inline-block;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.Bloc3
+{
+    color: white;
+    display: inline-block;
+    margin-left: 100px;
+    margin-right: 100px;
 }
