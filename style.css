@@ -15,14 +15,14 @@ width: 100%;
 height: 190px;
 }
 
-
+/* Boite de titre haut gauche*/
 body>header>.titres
 {
     width: 50%;
     height: 190px;
     background-color: aqua;
 }
-
+/* boite de nav haut droite*/
 body>header>nav
 {
     display: flex;
@@ -32,7 +32,7 @@ body>header>nav
     height: 190px;
     background-color: burlywood;
 }
-
+/* boite élément filtre sous les titres*/
 body>.filter
 {
     display: flex;
@@ -71,7 +71,7 @@ body>.activite
 /* boite hebergement normal contient 6 div*/
 body>.hebergement>div.Nliste 
 {
-    width: 880px;
+    width: 100%;
     height: 630px;
     margin:40px;
     background-color: crimson;
@@ -86,7 +86,7 @@ body>.hebergement>div.Nliste *
     display: flex;
     flex-direction: row;
     background: cornsilk;
-    width: 230px;
+    width: 235px;
     height: 190px;
     margin-top:90px;
     margin-left: 40px;
@@ -94,7 +94,7 @@ body>.hebergement>div.Nliste *
 /* boite hebergement populaire contient 3 div*/
 body>.hebergement>div.Pliste 
 {
-    width:420px;
+    width:30%;
     height: 630px;
     margin:40px;
     background-color: crimson;
@@ -108,8 +108,8 @@ body>.hebergement>div.Pliste *
     display: flex;
     flex-direction: row;
     background: cornsilk;
-    width: 330px;
-    height: 130px;
+    width: 340px;
+    height:auto;
     margin:20px;
 }
 /* boite activité contient six div*/
@@ -128,39 +128,37 @@ body>.activite>div
     background-color: rgb(16, 133, 45);
     display: flex;
     flex-wrap: wrap;
-    width: 300px;
-    height: 120px;
+    width: 40%;
+    height: auto;
     margin: 40px;
 }
 /* le pied de page contient 3 div liste a puce en inline block*/
 footer
 {   width: 100%;
-    height: 200px;
+    height: auto;
     background-color:black;
-    height: 220px;
-    display: inline-block;
-    text-align: center;
+    display: flex;
+flex-direction: row;
+
+    
 }
 
 /* les bloc du footer*/
 .Bloc1
 {
+    width: 30%;
     color: white;
-    display: inline-block;
-    margin-left: 100px;
-    margin-right: 100px;
+   
 }
 .Bloc2
 {
+    width: 30%;
     color: white;
-    display: inline-block;
-    margin-left: 100px;
-    margin-right: 100px;
+   
 }
 .Bloc3
 {
+    width: 30%;
     color: white;
-    display: inline-block;
-    margin-left: 100px;
-    margin-right: 100px;
+   
 }
