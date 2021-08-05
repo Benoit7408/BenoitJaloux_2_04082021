@@ -59,6 +59,7 @@ body>.hebergement
     height: 690px;
     background-color: gray;
     margin-bottom: 50px;
+  
 }
 /* boite activité contient six div*/
 body>.activite
@@ -72,16 +73,25 @@ body>.activite
 body>.hebergement>div.Nliste 
 {
     width: 100%;
-    height: 630px;
+    height: 100%;
     margin:40px;
-    background-color: crimson;
+    padding-right: 40px;
+    background-color: rgb(27, 24, 24);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+#superposeXL
+{
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0px;
+    
+    width: 100%;
+}   
 
-/* tout les div d'hebergement*/
-body>.hebergement>div.Nliste *
+/* tout les div d'hebergement normale*/
+body>.hebergement>div.Nliste>div
 {
     display: flex;
     flex-direction: row;
@@ -108,9 +118,8 @@ body>.hebergement>div.Pliste *
     display: flex;
     flex-direction: row;
     background: cornsilk;
-    width: 340px;
     height:auto;
-    margin:20px;
+    margin: 40px;
 }
 /* boite activité contient six div*/
 body>.activite
