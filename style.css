@@ -1,55 +1,173 @@
+/*largeur du body selon maquette*/
 body
 {
 background-color: brown;
-}
 
+margin-left: 50px;
+margin-right:50px;
+}
+/* header en flex qui contient titre et nav en ligne*/
 header
 {
 display: flex;
 flex-direction:row;    
 width: 100%;
-height: 300px;
+height: 190px;
 }
 
-
+/* Boite de titre haut gauche*/
 body>header>.titres
 {
     width: 50%;
-    height: 300px;
+    height: 190px;
     background-color: aqua;
 }
-
+/* boite de nav haut droite*/
 body>header>nav
 {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
     width: 50%;
-    height: 300px;
+    height: 190px;
     background-color: burlywood;
 }
-
+/* boite élément filtre sous les titres*/
 body>.filter
 {
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    height: 200px;
+    height: 235px;
     background-color: chartreuse;
 }
+body>.filter *
+{
+    margin: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+    height: 30px;
 
+}
+/* boite hebergement contient Nliste et Pliste*/
 body>.hebergement
 {
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    height: 500px;
+    height: 690px;
     background-color: gray;
+    margin-bottom: 50px;
+  
 }
-
+/* boite activité contient six div*/
 body>.activite
 {
     width: 100%;
     height: 400px;
     background-color: beige;
+    
 }
-
-body>footer
+/* boite hebergement normal contient 6 div*/
+body>.hebergement>div.Nliste 
 {
     width: 100%;
-    height: 200px;
+    height: 100%;
+    margin:40px;
+    padding-right: 40px;
+    background-color: rgb(27, 24, 24);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#superposeXL
+{
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0px;
+    
+    width: 100%;
+}   
+
+/* tout les div d'hebergement normale*/
+body>.hebergement>div.Nliste>div
+{
+    display: flex;
+    flex-direction: row;
+    background: cornsilk;
+    width: 235px;
+    height: 190px;
+    margin-top:90px;
+    margin-left: 40px;
+}
+/* boite hebergement populaire contient 3 div*/
+body>.hebergement>div.Pliste 
+{
+    width:30%;
+    height: 630px;
+    margin:40px;
+    background-color: crimson;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* tout les div hebergement populaire*/
+body>.hebergement>div.Pliste *
+{
+    display: flex;
+    flex-direction: row;
+    background: cornsilk;
+    height:auto;
+    margin: 40px;
+}
+/* boite activité contient six div*/
+body>.activite
+{
+    height: 540px;
+    background-color: rgb(130, 57, 145);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+/* les div de activité*/
+body>.activite>div 
+{
+    background-color: rgb(16, 133, 45);
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    height: auto;
+    margin: 40px;
+}
+/* le pied de page contient 3 div liste a puce en inline block*/
+footer
+{   width: 100%;
+    height: auto;
     background-color:black;
+    display: flex;
+flex-direction: row;
+
+    
+}
+
+/* les bloc du footer*/
+.Bloc1
+{
+    width: 30%;
+    color: white;
+   
+}
+.Bloc2
+{
+    width: 30%;
+    color: white;
+   
+}
+.Bloc3
+{
+    width: 30%;
+    color: white;
+   
 }
