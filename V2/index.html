@@ -5,6 +5,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="icon/fontawesome/css/all.css"/>
     <title>Reservia</title>
     <meta name="description" content="">
   </head>
@@ -21,27 +22,33 @@
                     <p>En plein centre ville ou en pleine nature</p>
             </div>
             
+          
+
             <nav>
-                <a href ="#hebergement">
-                    Hébergements
-                </a>
-                <a href ="#activite">
-                    Activité
-                </a>
-                <div class="inscrire">S'inscrire
 
-                </div>
+                <ul>
+                        <li><a href ="#hebergement">Hébergements</a></li>
+                        <li><a href ="#activite">Activité</a></li>
+                        <li><a href ="#inscrire">S'inscrire</a></li>
 
-
+                </ul>
+                
             </nav>
-        
 
+            <form><i class="fas fa-map-marker-alt"></i>
+                <input type="search"/>
+                <label for="search"> Rechercher</label>
+            </form>
+            
             <section class="filter">
 
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <ul><h3>Filtre</h3>
+                    <li><i class="fas fa-money-bill-wave"></i>Economique</li>
+                    <li><i class="fas fa-child"></i>Famillial</li>
+                    <li><i class="fas fa-heart"></i>Romantique</li>
+                    <li><i class="fas fa-dog"></i>Animaux autorisé</li>
+                </ul>
+              
 
             </section>
 
@@ -50,44 +57,54 @@
         <main>
             <section id="hebergement">
                 
+               <p><i class="fas fa-info"></i>Plus de 500 logements sont disponible dans cette ville</p>
+                
                 <div id="Nliste">
                     
-                    
+                    <h1>Hebergements à Marseille</h1>
 
                     <figure>
                         <img src="images/hebergements/Cannebiere.jpg" alt="auberge de la cannebiere">
                             <figcaption>
-                                Auberge de la cannebiere
+                               <h2>auberge de la cannebiere</h2>
+                               <p>Nuit à partir de <strong>25€</strong></p>
+
                             </figcaption>
                     </figure>
                     <figure>
                         <img src="images/hebergements/Hotel_du_port.jpg" alt="hotel du port">
                             <figcaption>
-                                    
+                                <h2>Hôtel du port</h2>
+                                <p>Nuit à partir de <strong>52€</strong></p>
+
                             </figcaption>
                     </figure>        
                     <figure>
                         <img src="images/hebergements/Mouettes.jpg" alt="Hotel les mouettes">
                             <figcaption>
-                                    
+                                <h2>Hôtel Les mouettes</h2>
+                                <p>Nuit à partir de <strong>76€</strong></p>
                             </figcaption>
                     </figure>
                     <figure>
                         <img src="images/hebergements/Mer.jpg" alt="hotel de la mer">
                             <figcaption>
-                                    
+                                <h2>Hôtel de la mer</h2>
+                                <p>Nuit à partir de <strong>46€</strong></p>
                             </figcaption>
                     </figure>
                     <figure>
                         <img src="images/hebergements/Le_Panier.jpg" alt="auberge le panier">
                             <figcaption>
-                                    
+                                <h2>auberge Le Panier</h2>
+                                <p>Nuit à partir de <strong>23€</strong></p>
                             </figcaption>
                     </figure>
                     <figure>
                         <img src="images/hebergements/Amina.jpg" alt="auberge le panier">
                             <figcaption>
-                                    
+                                <h2>Hôtel chez Amina</h2>
+                                <p>Nuit à partir de <strong>96€</strong></p>
                             </figcaption>
                     </figure>
 
@@ -95,13 +112,14 @@
 
                 <div id="Pliste">
                     
-                
+                    <h1>Les plus populaires</h1><i class="fas fa-chart-line"></i>
 
                     <figure>  
 
                         <img src="images/hebergements/Soleil_du_matin.jpg" alt="hotel le soleil du matin">
                         <figcaption>
-                                
+                            <h2>Hôtel Le soleil du matin</h2>
+                            <p>Nuit à partir de <strong>128€</strong></p>
                         </figcaption>
                     </figure>
 
@@ -109,7 +127,8 @@
                         
                         <img src="images/hebergements/Au_coeur.jpg" alt="Chambre d'hotes">
                         <figcaption>
-                                
+                            <h2>Au coeur de l'eau<br/>Chambres d'hotes</h2>
+                            <p>Nuit à partir de <strong>71€</strong></p>
                         </figcaption>
                     </figure>
 
@@ -118,7 +137,8 @@
                         <img src="images/hebergements/Hotel_tout_bleu.jpg" alt="hotel tout bleu et blanc">
                         
                         <figcaption>
-                                
+                            <h2>Hôtel Tout bleu et Blanc</h2>
+                            <p>Nuit à partir de <strong>68€</strong></p>
                         </figcaption>
                     </figure>
 
@@ -132,7 +152,7 @@
                                 <img src="images/activites/Vieux_port.jpg" alt="vieux port">
                         
                                         <figcaption>
-                                                Vieux Port
+                                               <h2> Vieux Port</h2>
                                         </figcaption>
                             </figure>
                     </div>
@@ -141,7 +161,7 @@
                                 <img src="images/activites/Fort_de_Pomegues.jpg" alt="fort de pomegues">
                     
                                         <figcaption>
-                                                Fort de Pomegues
+                                             <h2>Fort de Pomegues</h2>
                                         </figcaption>
                             </figure>
 
@@ -149,7 +169,7 @@
                                 <img src="images/activites/Frioul.jpg" alt="lac de frioul">
                     
                                         <figcaption>
-                                                Iles du Frioul
+                                                <h2>Iles du Frioul</h2>
                                         </figcaption>
                             </figure>
                 </div>
@@ -158,7 +178,7 @@
                                 <img src="images/activites/Calanques.jpg" alt="parc nationnal des calanques">
                     
                                         <figcaption>
-                                                Parc national des calanques
+                                               <h2>Parc national des calanques</h2>
                                         </figcaption>
                             </figure>
                 </div>
@@ -168,14 +188,14 @@
                                 <img src="images/activites/Notre-Dame_de_la_Garde.jpg" alt="Notre dame de la garde">
                     
                                         <figcaption>
-                                                Notre-Dame-de-la-Garde
+                                                <h2>Notre-Dame-de-la-Garde</h2>
                                         </figcaption>
                             </figure>
                             <figure>
                                 <img src="images/activites/Parc_Longchamp.jpg" alt="parc longchamp">
                     
                                         <figcaption>
-                                                Parc Longchamp
+                                                <h2>Parc Longchamp</h2>
                                         </figcaption>
                             </figure>
             </div>
@@ -187,15 +207,34 @@
 
         <footer>
             <div class="Bloc1">
-                <p>A propos</p>
+                
+                <ul> <strong>A propos<br><br></strong>
+
+                    <li>Fonctionnement du site</li>
+                    <li>Condition générales de ventes</li>
+                    <li>Données et confidentialité</li>
+                    
+                </ul>
             </div>
 
             <div class="Bloc3">
-                <p>Nos hebergements</p>
+                
+                <ul> <strong>Nos hebergements<br><br></strong>
+
+                    <li>Charte qualité</li>
+                    <li>Soumettre votre hôtel</li>
+                    
+                </ul>
             </div>
 
             <div class="Bloc3">
-                <P>Assistance</P>
+                
+                <ul><strong>Assistance<br><br></strong>
+
+                    <li>Centre d'aide</li>
+                    <li>Nous contacter</li>
+                    
+                </ul>
             </div>
 
         </footer>
